@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ProductPage from './pages/productPage/ProductPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PaymentPage from './pages/paymentPage/PaymentPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="product-page">
+    //   <h1>Cellphone Products</h1>
+    //   <div className="product-grid">
+    //     {products.map((product) => (
+    //       <div className="product-card" key={product.id}>
+    //         <img src={product.image} alt={product.name} />
+    //         <h2>{product.name}</h2>
+    //         <p>{product.description}</p>
+    //         <p>Price: ${product.price.toFixed(2)}</p>
+    //         <button>Add to Cart</button>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductPage />} />
+        <Route path="/cart" element={<PaymentPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

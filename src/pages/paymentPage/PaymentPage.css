@@ -1,0 +1,72 @@
+/* cart-page.css */
+
+/* Container for the entire cart page */
+.cart-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Left column for displaying cart items */
+.cart-column {
+  flex: 1;
+  margin-right: 40px;
+}
+
+/* Right column for order information */
+.order-info-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Style for the order information form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the cart items list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Style for individual cart items */
+/* You can customize this further based on your design */
+
+/* Style for the totals section */
+.totals {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.totals p {
+  margin: 5px 0;
+}
